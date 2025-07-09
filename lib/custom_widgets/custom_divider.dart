@@ -101,4 +101,12 @@ class RenderDivider extends RenderBox {
       Paint()..color = _color,
     );
   }
+
+  @override
+  double? computeDryBaseline(
+    covariant BoxConstraints constraints,
+    TextBaseline baseline,
+  ) {
+    return super.computeDryBaseline(constraints, baseline);
+  }
 }
