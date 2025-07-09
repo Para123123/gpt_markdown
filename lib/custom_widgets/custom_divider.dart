@@ -107,6 +107,9 @@ class RenderDivider extends RenderBox {
     covariant BoxConstraints constraints,
     TextBaseline baseline,
   ) {
-    return super.computeDryBaseline(constraints, baseline);
+    // 先算出这个 RenderBox 在给定约束下的尺寸
+    final Size s = getDryLayout(constraints);
+    // 把基线设为高度的一半，即垂直中心
+    return s.height / 2;
   }
 }
