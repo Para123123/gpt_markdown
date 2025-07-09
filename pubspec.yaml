@@ -10,7 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_math_fork: ^0.7.3
+  flutter_math_fork:
+    git:
+      url: https://github.com/Para123123/flutter_math_fork_baocai.git
+      ref: 1f44623a5bbb1b39c2323648c43f1b0477dfba03
 
 dev_dependencies:
   flutter_test:
